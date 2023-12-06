@@ -1,13 +1,11 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CVSImport : MonoBehaviour
+public class CSVImport : MonoBehaviour
 {
 
     static public List<GPSPoint> pointList = new List<GPSPoint>();
-
+    
     [Header("Input Tables")]
     public TextAsset GPSCSV;
 
@@ -17,23 +15,25 @@ public class CVSImport : MonoBehaviour
     public Color color3 = new Color(.5f, .5f, .5f);
     public Color color4 = new Color(1.0f, .5f, .5f);
     public Color color5 = new Color(1.0f, 0, 0);
-    public Color colorDefault = ConsoleColor.black;
+    public Color colorDefault = Color.black;
 
     private int[] Steps = { 10000, 20000, 30000, 40000, 60000 };
+
     // Start is called before the first frame update
     void Start()
     {
         Import();
         DrawGPSPoints(pointList);
+
     }
 
-    void Import()
+     void Import()
     {
-        TextAsset rawData = GPSCSV; //CSV Daten werden als TextAsset eingelesen
-
+        TextAsset rawData = GPSCSV; //CSV Daten werden als TextAsset eingelesen 
+        
         //Eingabedaten teilen in Zeile je Array (Trennzeichen Zeilenumbruch '\n')
         string[] data = rawData.text.Split(new char[] { '\n' });
-
+        
         //Schleife über alle Tabellenzeilen
         for (int i = 1; i < data.Length - 1; i++)
         {   //Eingabezeile teilen in Spalte je Array (Trennzeichen ';')
@@ -48,14 +48,56 @@ public class CVSImport : MonoBehaviour
             double.TryParse(row[6], out point.lat);
             double.TryParse(row[4], out point.light);
             double.TryParse(row[5], out point.noise);
-
+            
             //Hinzufügen der Instanz zur Liste aller GPS-Punkte
             pointList.Add(point);
         }
+
     }
-    // Update is called once per frame
-    void Update()
+
+    void DrawGPSPoints(List<GPSPoint> pointListtoDraw)
     {
-        
+        float sizeShpere = 1;
+        int nr = 0;
+
+        foreach (GPSPoint p in pointListtoDraw)
+        {
+            //Primitive für GPS Punkt erstellen
+            p.GOPoint = GameObject.CreatePrimitive(PrimitiveType.Sphere);
+
+            //Nummerierung der GPS Punkte zur besseren Unterscheidung
+            p.GOPoint.name = "GPS_Point_" + nr;
+            nr++;
+
+            //GPS Punkt an Parent-Objekt anfügen
+            p.GOPoint.transform.SetParent(gameObject.GetComponent<Transform>());
+                        
+            //Mittelpunkt neu setzen
+            Vector2 localOriginGPS = new Vector2(50.265030410959135f, 10.952349798326864f);
+            GPSEncoder.SetLocalOrigin(localOriginGPS);
+
+            //Umrechnen von GPS- in Unity-Koordinaten
+            Vector3 positionInUnity = GPSEncoder.GPSToUCS((float)p.lat, (float)p.lon);
+            p.GOPoint.transform.position = new Vector3(positionInUnity.x, sizeShpere*0.5f, positionInUnity.z);
+
+            //Größe für Primitive/Sphere setzen
+            p.GOPoint.transform.localScale = new Vector3(sizeShpere, sizeShpere, sizeShpere);
+
+            //Wert des Parameters (der unabh. Variablen) anhand der Farbe kodieren
+            Color colorValue = getColorBasedOnParameter(p.light);
+            p.GOPoint.GetComponent<Renderer>().material.SetColor("_Color", colorValue);
+
+        }
     }
+
+    Color getColorBasedOnParameter(double light_value)
+    {
+        if (light_value < Steps[0]) return color1;
+        else if (light_value < Steps[1]) return color2;
+        else if (light_value < Steps[2]) return color3;
+        else if (light_value < Steps[3]) return color4;
+        else if (light_value < Steps[4]) return color5;
+        else return colorDefault;
+    }
+
 }
