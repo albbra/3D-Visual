@@ -78,10 +78,10 @@ public class CSVImport : MonoBehaviour
 
             //Umrechnen von GPS- in Unity-Koordinaten
             Vector3 positionInUnity = GPSEncoder.GPSToUCS((float)p.lat, (float)p.lon);
-            p.GOPoint.transform.position = new Vector3(positionInUnity.x, sizeShpere*0.5f, positionInUnity.z);
+            p.GOPoint.transform.position = new Vector3(-positionInUnity.x/29, sizeShpere*0.5f-0.4f, -positionInUnity.z/30-0.5f);
 
             //Größe für Primitive/Sphere setzen
-            p.GOPoint.transform.localScale = new Vector3(sizeShpere, sizeShpere, sizeShpere);
+            p.GOPoint.transform.localScale = new Vector3(sizeShpere/6, sizeShpere/6, sizeShpere/6);
 
             //Wert des Parameters (der unabh. Variablen) anhand der Farbe kodieren
             Color colorValue = getColorBasedOnParameter(p.light);
