@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.5587657, g: 0.80869865, b: 0.99084485, a: 1}
+  m_IndirectSpecularColor: {r: 0.55916256, g: 0.8082825, b: 0.99096864, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1357,6 +1357,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rus_build_2et_01b (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 1282404491531254, guid: a121d32ef0a226a459036bdbc16455ea, type: 3}
+      propertyPath: m_TagString
+      value: PhotoGO
+      objectReference: {fileID: 0}
     - target: {fileID: 4215362236259530, guid: a121d32ef0a226a459036bdbc16455ea, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.006702947
@@ -1989,6 +1993,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1982368952154928, guid: 839cb4cbbcc4c54459297db52332efa1, type: 3}
+      propertyPath: m_TagString
+      value: PhotoGO
+      objectReference: {fileID: 0}
     - target: {fileID: 4706686599759574, guid: 839cb4cbbcc4c54459297db52332efa1, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.022039656
@@ -2309,6 +2317,10 @@ PrefabInstance:
     - target: {fileID: 1282404491531254, guid: a121d32ef0a226a459036bdbc16455ea, type: 3}
       propertyPath: m_Name
       value: rus_build_2et_01b (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282404491531254, guid: a121d32ef0a226a459036bdbc16455ea, type: 3}
+      propertyPath: m_TagString
+      value: PhotoGO
       objectReference: {fileID: 0}
     - target: {fileID: 4215362236259530, guid: a121d32ef0a226a459036bdbc16455ea, type: 3}
       propertyPath: m_LocalScale.x
@@ -8228,7 +8240,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1993871504015766, guid: 5f233c5bb4cb5ba41b2d790aede3bcee, type: 3}
       propertyPath: m_Name
-      value: rus_build_5et_02 (4)
+      value: building
+      objectReference: {fileID: 0}
+    - target: {fileID: 1993871504015766, guid: 5f233c5bb4cb5ba41b2d790aede3bcee, type: 3}
+      propertyPath: m_TagString
+      value: PhotoGO
       objectReference: {fileID: 0}
     - target: {fileID: 4674870011337816, guid: 5f233c5bb4cb5ba41b2d790aede3bcee, type: 3}
       propertyPath: m_LocalScale.x
@@ -8869,7 +8885,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1720421314788298, guid: fd4517956020aa54989cd9a8a7e55b1b, type: 3}
       propertyPath: m_Name
-      value: rus_build_5et_03f
+      value: building4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1720421314788298, guid: fd4517956020aa54989cd9a8a7e55b1b, type: 3}
+      propertyPath: m_TagString
+      value: PhotoGO
       objectReference: {fileID: 0}
     - target: {fileID: 4330718443672580, guid: fd4517956020aa54989cd9a8a7e55b1b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12038,7 +12058,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1993871504015766, guid: 5f233c5bb4cb5ba41b2d790aede3bcee, type: 3}
       propertyPath: m_Name
-      value: rus_build_5et_02
+      value: building2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1993871504015766, guid: 5f233c5bb4cb5ba41b2d790aede3bcee, type: 3}
+      propertyPath: m_TagString
+      value: PhotoGO
       objectReference: {fileID: 0}
     - target: {fileID: 4674870011337816, guid: 5f233c5bb4cb5ba41b2d790aede3bcee, type: 3}
       propertyPath: m_LocalScale.x
@@ -12489,7 +12513,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1705497938415248, guid: 462efeb944acff8449ca0adecdc9842d, type: 3}
       propertyPath: m_Name
-      value: rus_build_5et_05 (4)
+      value: building2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705497938415248, guid: 462efeb944acff8449ca0adecdc9842d, type: 3}
+      propertyPath: m_TagString
+      value: PhotoGO
       objectReference: {fileID: 0}
     - target: {fileID: 4733902427796378, guid: 462efeb944acff8449ca0adecdc9842d, type: 3}
       propertyPath: m_LocalScale.x
@@ -12838,6 +12866,78 @@ RectTransform:
   m_AnchoredPosition: {x: 5, y: -0.5}
   m_SizeDelta: {x: -30, y: -3}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &471287713
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 471287714}
+  - component: {fileID: 471287716}
+  - component: {fileID: 471287715}
+  m_Layer: 5
+  m_Name: Photo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &471287714
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 471287713}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 235672413}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 77, y: -496}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &471287715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 471287713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Texture: {fileID: 0}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!222 &471287716
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 471287713}
+  m_CullTransparentMesh: 1
 --- !u!4 &473629100 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 459816, guid: aae542b8a65f39b49b008fa689ce9804, type: 3}
@@ -14511,6 +14611,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rus_build_2et_01b (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1282404491531254, guid: a121d32ef0a226a459036bdbc16455ea, type: 3}
+      propertyPath: m_TagString
+      value: PhotoGO
+      objectReference: {fileID: 0}
     - target: {fileID: 4215362236259530, guid: a121d32ef0a226a459036bdbc16455ea, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.006822194
@@ -15830,7 +15934,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1993871504015766, guid: 5f233c5bb4cb5ba41b2d790aede3bcee, type: 3}
       propertyPath: m_Name
-      value: rus_build_5et_02 (2)
+      value: building
+      objectReference: {fileID: 0}
+    - target: {fileID: 1993871504015766, guid: 5f233c5bb4cb5ba41b2d790aede3bcee, type: 3}
+      propertyPath: m_TagString
+      value: PhotoGO
       objectReference: {fileID: 0}
     - target: {fileID: 4674870011337816, guid: 5f233c5bb4cb5ba41b2d790aede3bcee, type: 3}
       propertyPath: m_LocalScale.x
@@ -18015,6 +18123,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rus_build_2et_01b (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1282404491531254, guid: a121d32ef0a226a459036bdbc16455ea, type: 3}
+      propertyPath: m_TagString
+      value: PhotoGO
+      objectReference: {fileID: 0}
     - target: {fileID: 4215362236259530, guid: a121d32ef0a226a459036bdbc16455ea, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.0055314
@@ -18866,7 +18978,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1993871504015766, guid: 5f233c5bb4cb5ba41b2d790aede3bcee, type: 3}
       propertyPath: m_Name
-      value: rus_build_5et_02 (3)
+      value: building
+      objectReference: {fileID: 0}
+    - target: {fileID: 1993871504015766, guid: 5f233c5bb4cb5ba41b2d790aede3bcee, type: 3}
+      propertyPath: m_TagString
+      value: PhotoGO
       objectReference: {fileID: 0}
     - target: {fileID: 4674870011337816, guid: 5f233c5bb4cb5ba41b2d790aede3bcee, type: 3}
       propertyPath: m_LocalScale.x
@@ -23552,6 +23668,7 @@ GameObject:
   - component: {fileID: 963194227}
   - component: {fileID: 963194226}
   - component: {fileID: 963194229}
+  - component: {fileID: 963194230}
   m_Layer: 0
   m_Name: Overview
   m_TagString: MainCamera
@@ -23645,6 +23762,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb7617e6931aaaa4d8459ccd73375d62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &963194230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963194225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67a94e80585e8b447bd2de51b482330c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image_photo: {fileID: 471287713}
+  texture1: {fileID: 2800000, guid: f0fd798749d18db47ae45e7f8a359fbd, type: 3}
+  texture2: {fileID: 2800000, guid: fd2990840c08f3641abb98d0475dce84, type: 3}
+  texture3: {fileID: 2800000, guid: 6d46cc847db333f40ab446408a380f0b, type: 3}
 --- !u!4 &967303654 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 459816, guid: aae542b8a65f39b49b008fa689ce9804, type: 3}
@@ -25681,6 +25814,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rus_build_2et_01b (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1282404491531254, guid: a121d32ef0a226a459036bdbc16455ea, type: 3}
+      propertyPath: m_TagString
+      value: PhotoGO
+      objectReference: {fileID: 0}
     - target: {fileID: 4215362236259530, guid: a121d32ef0a226a459036bdbc16455ea, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.0061596
@@ -25963,7 +26100,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1993871504015766, guid: 5f233c5bb4cb5ba41b2d790aede3bcee, type: 3}
       propertyPath: m_Name
-      value: rus_build_5et_02 (1)
+      value: building
+      objectReference: {fileID: 0}
+    - target: {fileID: 1993871504015766, guid: 5f233c5bb4cb5ba41b2d790aede3bcee, type: 3}
+      propertyPath: m_TagString
+      value: PhotoGO
       objectReference: {fileID: 0}
     - target: {fileID: 4674870011337816, guid: 5f233c5bb4cb5ba41b2d790aede3bcee, type: 3}
       propertyPath: m_LocalScale.x
@@ -34784,6 +34925,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rus_build_5et_04 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1938197716418238, guid: 408af9f2b6062b4449d4b84d945fdd57, type: 3}
+      propertyPath: m_TagString
+      value: PhotoGO
+      objectReference: {fileID: 0}
     - target: {fileID: 4321637437612654, guid: 408af9f2b6062b4449d4b84d945fdd57, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.013360802
@@ -36890,6 +37035,7 @@ GameObject:
   - component: {fileID: 1526239119}
   - component: {fileID: 1526239118}
   - component: {fileID: 1526239117}
+  - component: {fileID: 1526239120}
   m_Layer: 0
   m_Name: AvatarCamera
   m_TagString: Untagged
@@ -36971,6 +37117,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1305333441}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1526239120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1526239116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67a94e80585e8b447bd2de51b482330c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image_photo: {fileID: 471287713}
+  texture1: {fileID: 2800000, guid: f0fd798749d18db47ae45e7f8a359fbd, type: 3}
+  texture2: {fileID: 2800000, guid: fd2990840c08f3641abb98d0475dce84, type: 3}
+  texture3: {fileID: 2800000, guid: 6d46cc847db333f40ab446408a380f0b, type: 3}
 --- !u!1 &1527143726
 GameObject:
   m_ObjectHideFlags: 0
@@ -42776,6 +42938,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rus_build_5et_03a
       objectReference: {fileID: 0}
+    - target: {fileID: 1042920087882922, guid: 53cc8692c5de61148b5301830771ad99, type: 3}
+      propertyPath: m_TagString
+      value: PhotoGO
+      objectReference: {fileID: 0}
     - target: {fileID: 4649007269691902, guid: 53cc8692c5de61148b5301830771ad99, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.011432846
@@ -43265,6 +43431,10 @@ PrefabInstance:
     - target: {fileID: 1282404491531254, guid: a121d32ef0a226a459036bdbc16455ea, type: 3}
       propertyPath: m_Name
       value: rus_build_2et_01b (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282404491531254, guid: a121d32ef0a226a459036bdbc16455ea, type: 3}
+      propertyPath: m_TagString
+      value: PhotoGO
       objectReference: {fileID: 0}
     - target: {fileID: 4215362236259530, guid: a121d32ef0a226a459036bdbc16455ea, type: 3}
       propertyPath: m_LocalScale.x
@@ -44228,7 +44398,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1705497938415248, guid: 462efeb944acff8449ca0adecdc9842d, type: 3}
       propertyPath: m_Name
-      value: rus_build_5et_05 (3)
+      value: building2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705497938415248, guid: 462efeb944acff8449ca0adecdc9842d, type: 3}
+      propertyPath: m_TagString
+      value: PhotoGO
       objectReference: {fileID: 0}
     - target: {fileID: 4733902427796378, guid: 462efeb944acff8449ca0adecdc9842d, type: 3}
       propertyPath: m_LocalScale.x
@@ -44790,7 +44964,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1705497938415248, guid: 462efeb944acff8449ca0adecdc9842d, type: 3}
       propertyPath: m_Name
-      value: rus_build_5et_05 (2)
+      value: building2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705497938415248, guid: 462efeb944acff8449ca0adecdc9842d, type: 3}
+      propertyPath: m_TagString
+      value: PhotoGO
       objectReference: {fileID: 0}
     - target: {fileID: 4733902427796378, guid: 462efeb944acff8449ca0adecdc9842d, type: 3}
       propertyPath: m_LocalScale.x
@@ -45242,7 +45420,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1705497938415248, guid: 462efeb944acff8449ca0adecdc9842d, type: 3}
       propertyPath: m_Name
-      value: rus_build_5et_05
+      value: building2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705497938415248, guid: 462efeb944acff8449ca0adecdc9842d, type: 3}
+      propertyPath: m_TagString
+      value: PhotoGO
       objectReference: {fileID: 0}
     - target: {fileID: 4733902427796378, guid: 462efeb944acff8449ca0adecdc9842d, type: 3}
       propertyPath: m_LocalScale.x
@@ -46316,6 +46498,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rus_build_5et_04 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1938197716418238, guid: 408af9f2b6062b4449d4b84d945fdd57, type: 3}
+      propertyPath: m_TagString
+      value: PhotoGO
+      objectReference: {fileID: 0}
     - target: {fileID: 4321637437612654, guid: 408af9f2b6062b4449d4b84d945fdd57, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.007629301
@@ -46540,6 +46726,10 @@ PrefabInstance:
     - target: {fileID: 1938197716418238, guid: 408af9f2b6062b4449d4b84d945fdd57, type: 3}
       propertyPath: m_Name
       value: rus_build_5et_04 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1938197716418238, guid: 408af9f2b6062b4449d4b84d945fdd57, type: 3}
+      propertyPath: m_TagString
+      value: PhotoGO
       objectReference: {fileID: 0}
     - target: {fileID: 4321637437612654, guid: 408af9f2b6062b4449d4b84d945fdd57, type: 3}
       propertyPath: m_LocalScale.x
@@ -47531,6 +47721,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: rus_build_2et_01b (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1282404491531254, guid: a121d32ef0a226a459036bdbc16455ea, type: 3}
+      propertyPath: m_TagString
+      value: PhotoGO
+      objectReference: {fileID: 0}
     - target: {fileID: 4215362236259530, guid: a121d32ef0a226a459036bdbc16455ea, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.0073410003
@@ -47599,6 +47793,10 @@ PrefabInstance:
     - target: {fileID: 1282404491531254, guid: a121d32ef0a226a459036bdbc16455ea, type: 3}
       propertyPath: m_Name
       value: rus_build_2et_01b
+      objectReference: {fileID: 0}
+    - target: {fileID: 1282404491531254, guid: a121d32ef0a226a459036bdbc16455ea, type: 3}
+      propertyPath: m_TagString
+      value: PhotoGO
       objectReference: {fileID: 0}
     - target: {fileID: 4215362236259530, guid: a121d32ef0a226a459036bdbc16455ea, type: 3}
       propertyPath: m_LocalScale.x
@@ -50905,7 +51103,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1705497938415248, guid: 462efeb944acff8449ca0adecdc9842d, type: 3}
       propertyPath: m_Name
-      value: rus_build_5et_05 (1)
+      value: building2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705497938415248, guid: 462efeb944acff8449ca0adecdc9842d, type: 3}
+      propertyPath: m_TagString
+      value: PhotoGO
       objectReference: {fileID: 0}
     - target: {fileID: 4733902427796378, guid: 462efeb944acff8449ca0adecdc9842d, type: 3}
       propertyPath: m_LocalScale.x
