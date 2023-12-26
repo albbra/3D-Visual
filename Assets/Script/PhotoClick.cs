@@ -11,6 +11,12 @@ public class PhotoClick : MonoBehaviour
     public Texture texture1;
     public Texture texture2;
     public Texture texture3;
+    public Texture texture4;
+    public Texture texture5;
+    public Texture texture6;
+    public Texture texture7;
+    public Texture texture8;
+    public Texture texture9;
 
 
     private void Update()
@@ -44,7 +50,13 @@ public class PhotoClick : MonoBehaviour
             case "building": return texture1;
             case "building2": return texture2;
             case "building4": return texture3;
-            default: return texture1;
+            case "building9": return texture4;
+            case "Mensa": return texture5;
+            case "Schornstein": return texture6;
+            case "ZME": return texture7;
+            case "Parkhaus": return texture8;
+            //case "campus": return texture9;
+            default: return texture9;
         }
     }
 
