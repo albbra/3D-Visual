@@ -52,7 +52,7 @@ public class PhotoClick : MonoBehaviour
             case "building4": return texture3;
             case "building9": return texture4;
             case "Mensa": return texture5;
-            case "Schornstein": return texture6;
+            case "building3": return texture6;
             case "ZME": return texture7;
             case "Parkhaus": return texture8;
             //case "campus": return texture9;
