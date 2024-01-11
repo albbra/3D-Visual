@@ -31,9 +31,9 @@ public class CSVImport : MonoBehaviour
         DrawGPSPoints(pointList);
 
         //Position and Scale DataPoints
-        gameObject.transform.position = new Vector3(-3.63f, 5.6746f, -6.02f);
+        gameObject.transform.position = new Vector3(-4.53f, 5.1713f, -5.452f);
         gameObject.transform.rotation = Quaternion.Euler(rotationValue);
-        gameObject.transform.localScale = new Vector3(0.1423552f, 0.1423552f, 0.1423552f);
+        gameObject.transform.localScale = new Vector3(0.1200201f, 0.1294981f, 0.1185589f);
 
         RemoveSphereColliders();
     }
