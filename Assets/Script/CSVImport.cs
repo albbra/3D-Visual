@@ -17,6 +17,11 @@ public class CSVImport : MonoBehaviour
     public Color color5 = new Color(1.0f, 0, 0);
     public Color colorDefault = Color.black;
 
+    [Header("Data Transformation")]
+    private Vector3 rotationValue = new Vector3(0.0f, -0.926f, 0.0f);
+
+
+
     private int[] Steps = { 10000, 20000, 30000, 40000, 60000 };
 
     // Start is called before the first frame update
@@ -25,6 +30,12 @@ public class CSVImport : MonoBehaviour
         Import();
         DrawGPSPoints(pointList);
 
+        //Position and Scale DataPoints
+        gameObject.transform.position = new Vector3(-3.63f, 5.6746f, -6.02f);
+        gameObject.transform.rotation = Quaternion.Euler(rotationValue);
+        gameObject.transform.localScale = new Vector3(0.1423552f, 0.1423552f, 0.1423552f);
+
+        RemoveSphereColliders();
     }
 
      void Import()
@@ -53,6 +64,16 @@ public class CSVImport : MonoBehaviour
             pointList.Add(point);
         }
 
+    }
+
+    void RemoveSphereColliders()
+    {
+        SphereCollider[] colliders = GetComponentsInChildren<SphereCollider>();
+
+        foreach (SphereCollider collider in colliders)
+        {
+            Destroy(collider);
+        }
     }
 
     void DrawGPSPoints(List<GPSPoint> pointListtoDraw)
