@@ -63,12 +63,12 @@ public class UI_Functions : MonoBehaviour
     {
         if (change == 0) //status quo
         {
-            scene_scenario1.SetActive(true);
+            scene_scenario1.SetActive(false);
 
         }
         else // scenario 1
         {
-            scene_scenario1.SetActive(false);
+            scene_scenario1.SetActive(true);
             DynamicGI.UpdateEnvironment();
         }
     }
