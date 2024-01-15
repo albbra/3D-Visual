@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.5587657, g: 0.80869865, b: 0.99084485, a: 1}
+  m_IndirectSpecularColor: {r: 0.55916256, g: 0.8082825, b: 0.99096864, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -37490,12 +37490,12 @@ MonoBehaviour:
   texture1: {fileID: 2800000, guid: f0fd798749d18db47ae45e7f8a359fbd, type: 3}
   texture2: {fileID: 2800000, guid: fd2990840c08f3641abb98d0475dce84, type: 3}
   texture3: {fileID: 2800000, guid: 6d46cc847db333f40ab446408a380f0b, type: 3}
-  texture4: {fileID: 0}
-  texture5: {fileID: 0}
-  texture6: {fileID: 0}
-  texture7: {fileID: 0}
-  texture8: {fileID: 0}
-  texture9: {fileID: 0}
+  texture4: {fileID: 2800000, guid: 11bc84b3dfcc0504fb60101524aa1ada, type: 3}
+  texture5: {fileID: 2800000, guid: c66bbb1f105263d44b2c6cceefcbb77c, type: 3}
+  texture6: {fileID: 2800000, guid: c461ab36995940b4784c2f1233a5798b, type: 3}
+  texture7: {fileID: 2800000, guid: 2621f6199deb561409a28ef2756e4517, type: 3}
+  texture8: {fileID: 2800000, guid: e534fdb82e7fb9a418051f45088481b4, type: 3}
+  texture9: {fileID: 2800000, guid: e634477eda9580c4288e9a2ec429a226, type: 3}
 --- !u!1 &1527143726
 GameObject:
   m_ObjectHideFlags: 0
